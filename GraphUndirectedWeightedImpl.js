@@ -1,6 +1,6 @@
 class Node {
-    constructor(username) {
-        this.username = username;
+    constructor(name) {
+        this.name = name;
     }
 }
 
