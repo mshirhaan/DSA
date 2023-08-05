@@ -24,5 +24,13 @@ let map = new Graph();
 map.addNode('delhi');
 map.addNode('mumbai');
 map.addNode('mangalore');
+map.addNode('Bangalore');
+map.addNode('hyderabad');
+map.addNode('kerala');
 
-map.addEdge('delhi', 'mumbai', 500);
+map.addEdge('delhi', 'mumbai');
+map.addEdge('mangalore', 'Bangalore');
+map.addEdge('hyderabad', 'mumbai');
+map.addEdge('hyderabad', 'kerala');
+map.addEdge('Bangalore', 'kerala');
+map.addEdge('delhi', 'mangalore');
