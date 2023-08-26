@@ -7,7 +7,15 @@ let adjList = {
 
 function detectCycleDfs(adjList) {
     let visited = {};
-    return dfs('A' , -1);
+    for(let key in adjList) {
+        if(visited[key]) {
+            continue;
+        }
+        if(dfs(key , -1) == true) {
+            return true;
+        }
+    }
+    return false;
 
     function dfs(node, parent) {
         visited[node] = true;
