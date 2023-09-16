@@ -4,7 +4,7 @@ function getCombinationForTarget(candidates, target) {
     function helper(need) {
 
         if(need == 0) return [];
-        if(need == - 1) return null;
+         if(need < 0) return null;
         
         for(let i = 0; i < candidates.length; i++) {
             let bag = helper(need - candidates[i]);
